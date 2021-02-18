@@ -28,9 +28,9 @@ def build_snake(snake_list):
     for i, block in enumerate(snake_list):
         if len(snake_list) % 2 == 0:    # alternate snake body colors - snake head is always red
             if i % 2 == 0:
-            	pygame.draw.rect(dis, white, (block[0],block[1],BLOCK_SIZE,BLOCK_SIZE))
+                pygame.draw.rect(dis, white, (block[0],block[1],BLOCK_SIZE,BLOCK_SIZE))
             else:
-            	pygame.draw.rect(dis, red, (block[0],block[1],BLOCK_SIZE,BLOCK_SIZE))
+                pygame.draw.rect(dis, red, (block[0],block[1],BLOCK_SIZE,BLOCK_SIZE))
         else:
             if i % 2 == 0:
                 pygame.draw.rect(dis, red, (block[0],block[1],BLOCK_SIZE,BLOCK_SIZE))
